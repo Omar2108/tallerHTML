@@ -3,44 +3,58 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
         <title>Hoja de Vida</title>
+        <script type="text/javascript" src="JS/main.js"></script>
     </head>
-    <body>
-        <div>
-            <b>
-                <h1>Hoja de vida</h1><br>
-                <h2>Datos Personales</h2><br>
-            </b>
-        </div>
-        <div>
-            <img src="./img/foto.jpeg">
-        </div>
-        <div>
-            <p>Nombre Completo: </p>
-            <label>Omar Alfredo Rodriguez Chamorro</label><br>
-        </div>
-        <div>
-            <p>Tipo de Documento: </p>
-            <label>Cedula de ciudadania</label><br>
-        </div>
-        <div>
-            <p>Numero de documento: </p>
-            <label>92.071.424</label><br>
-        </div>
-        <div>
-            <p>Direccion: </p>
-            <label>Carrera 4 calle 4 - 125</label><br>
-        </div>
-        <div>
-            <p>Numero de contacto: </p>
-            <label>Celular: 3024148324</label><br>
-        </div>
-        <div>
-            <p>Correo Electronico: </p>
-            <label>omar.rodriguez2108@hotmail.com</label><br>
-        </div>
-        <div>
-            <a href="estudios.html">Siguiente pagina</a>
-        </div>
+    <body onload="main()" class="tema1" id="tema1">
+        <main>
+            <div>
+                <select id="slcTemas" >
+                    <option value="1">Tema 1</option>
+                    <option value="2">Tema 2</option>
+                    <option value="3">Tema 3</option>
+                    <option value="4">Tema 4</option>
+                </select>
+                <button id="btnCambiar" onclick="btnCambiar()">Cambiar tema</button>
+            </div>
+            <div>
+                <b>
+                    <h1>Hoja de vida</h1><br>
+                    <h2>Datos Personales</h2><br>
+                </b>
+            </div>
+            <div class="img">
+                <img src="./img/foto.jpeg">
+            </div>
+            <div>
+                <label>Nombre Completo:</label>
+                <p>Omar Alfredo Rodriguez Chamorro</p><br>
+            </div>
+            <div>
+                <label>Tipo de Documento:</label>
+                <p>Cedula de ciudadania </p><br>
+            </div>
+            <div>
+                <label>Numero de documento:</label>
+                <p> 92.071.424</p><br>
+            </div>
+            <div>
+                <label>Direccion:</label>
+                <p> carrera 4 cll 4-125 </p><br>
+            </div>
+            <div>
+                <label>Numero de contacto:</label>
+                <p> 3024148324</p>
+            </div>
+            <div>
+                <label>Correo Electronico:</label>
+                <p> omar.rodriguez2108@hotmail.com</p><br>
+            </div>
+            <div>
+                <a class="btn" href="estudios.html">Siguiente pagina</a>
+            </div>
+        </main>
+        
     </body>
 </html>

@@ -5,102 +5,134 @@
         <title>Hoja de vida</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
+        <script type="text/javascript" src="JS/main.js"></script>
     </head>
-    <body>
-        <div>
+    <body onload="main()" class="tema1" id="tema1">
+        <header>
+            <h1><img src="./img/foto.jpeg">Hoja de Vida</h1>
+            <div>
+                <select id="slcTemas" >
+                    <option value="1">Tema 1</option>
+                    <option value="2">Tema 2</option>
+                    <option value="3">Tema 3</option>
+                    <option value="4">Tema 4</option>
+                </select>
+                <button id="btnCambiar" onclick="btnCambiar()">Cambiar tema</button>
+            </div>
+        </header>
+        
+        <main>
+            
+            <div>
             <b>
-                <h2>
+                <h2 class="subtitulo">
                     Estudios Realizados
                 </h2>
             </b>
         </div>
-        <section>
-            <div>
-                <label>
-                    Formacion: 
-                </label>
-                <p>
-                    Tecnolgias en analisis y desarrollo de sistemas de informacion
-                </p>
+            <section>
+                <div>
+                    <a href="" id="visible" class="btnMostar" onclick="mostrarContenido()" ">ESTUDIO 1</a>
+                    <ul class="contenido" id="hidden">
+                        
+                        <li>
+                            <label>
+                                Formacion: 
+                            </label>
+                            <p>
+                                Tecnolgias en analisis y desarrollo de sistemas de informacion
+                            </p>
+                        </li>
+                        <li>
+                            <label>
+                                Institucion:
+                            </label>
+                            <p>
+                              SENA
+                            </p>
+                        </li>
+                        <li>
+                            <label>
+                               Ciudad:  
+                            </label>
+                            <p>
+                                Barranquella
+                            </p>
+                        </li>
+                        <li>
+                            <label>
+                                Fecha de inicio: 
+                            </label>
+                            <p>
+                                20/08/2020
+                            </p>
+                        </li>
+                        <li>
+                            <label>
+                                Fecha de finalizacion: 
+                            </label>
+                            <p>
+                                20/08/2022
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                
+                <div>
+                    <a href="" id="visible" onclick="mostrarContenido()">ESTUDIO 2</a>
+                     <ul class="contenido" id="hidden">
+                        <li>
+                            <label>
+                                Formacion: 
+                            </label>
+                            <p>
+                                Cultura y calidad de software
+                            </p>
+                        </li>
+                        <li>
+                            <label>
+                                Institucion:
+                            </label>
+                            <p>
+                              University Everis
+                            </p>
+                        </li>
+                        <li>
+                            <label>
+                               Ciudad:  
+                            </label>
+                            <p>
+                                Barranquella
+                            </p>
+                        </li>
+                        <li>
+                            <label>
+                                Fecha de inicio: 
+                            </label>
+                            <p>
+                                02/02/2021
+                            </p>
+                        </li>
+                        <li>
+                            <label>
+                                Fecha de finalizacion: 
+                            </label>
+                            <p>
+                                02/03/2021
+                            </p>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </section>
+            <div >
+                <a class="btn" href="experiencia.html">Siguiente pagina</a>
+                <a class="btn" href="index.html">Volver</a>
             </div>
-            <div>
-                <label>
-                    Institucion: 
-                </label>
-                <p>
-                   SENA
-                </p>
-            </div>
-            <div>
-                <label>
-                    Ciudad:  
-                </label>
-               <p>
-                    Barranquella
-                </p>
-            </div>
-            <div>
-                <label>
-                    Fecha de inicio: 
-                </label>
-                <p>
-                   20/08/2020
-                </p>
-            </div>
-             <div>
-                <label>
-                    Fecha de finalizacion: 
-                </label>
-                <p>
-                    20/08/2022
-                </p>
-            </div>
-        </section>
-        <section>
-            <div>
-                <label>
-                    Formacion: 
-                </label>
-                <p>
-                    Cultura y calidad de software
-                </p>
-            </div>
-            <div>
-                <label>
-                    Institucion: 
-                </label>
-                <p>
-                    University Everis
-                </p>
-            </div>
-            <div>
-                <label>
-                    Ciudad:  
-                </label>
-                <p>
-                    Barranquella
-                </p>
-            </div>
-            <div>
-                <label>
-                    Fecha de inicio: 
-                </label>
-                <p>
-                    02/02/2021
-                </p>
-            </div>
-            <div>
-                <label>
-                     Fecha de finalizacion: 
-                </label>
-                <p>
-                    02/03/2021
-                </p>
-            </div>
-        </section>
-        <div>
-            <a href="experiencia.html">Siguiente pagina</a>
-            <a href="index.html">Volver</a>
-        </div>
+        </main>
+        
     </body>
 </html>

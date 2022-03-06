@@ -4,124 +4,154 @@
         <title>Hoja de vida</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
+        <script type="text/javascript" src="JS/main.js"></script>
     </head>
-    <body>
-        <div>
-            <h2>
-                <b>
-                    Referencias Personales
-                </b>
-            </h2>
-        </div>
-        <di>
-            <section>
-                <div>
-                    <label>
-                        Nombre completo Referencia 1: 
-                    </label>
-                    <p>
-                        Maria Carolina Mendez Monzon
-                    </p>
-                </div>
-                <div>
-                    <label>
-                        Ocupacion: 
-                    </label>
-                    <p>
-                        Ama de casa
-                    </p>
-                </div>
-                <div>
-                    <label>
-                        Direccion: 
-                    </label>
-                    <p>
-                        Carrera 3 call 2- 123 Chalan, Sucre
-                    </p>
-                </div>
-                <div>
-                    <label>
-                        Telefono: 
-                    </label>
-                    <p>
-                        322172712
-                    </p>
-                </div>
-            </section>
-             <section>
-                <div>
-                    <label>
-                        Nombre completo Referencia 2: 
-                    </label>
-                    <p>
-                        lizeth Maria Rodriguez Puentes
-                    </p>
-                </div>
-                <div>
-                    <label>
-                        Ocupacion: 
-                    </label>
-                    <p>
-                        Contadora
-                    </p>
-                </div>
-                <div>
-                    <label>
-                        Direccion: 
-                    </label>
-                    <p>
-                        Calle 78 cra 123-23 Chalan, Sucre
-                    </p>
-                </div>
-                <div>
-                    <label>
-                        Telefono: 
-                    </label>
-                    <p>
-                        3178932140
-                    </p>
-                </div>
-            </section>
-             <section>
-                <div>
-                    <label>
-                        Nombre completo Referencia 3: 
-                    </label>
-                    <p>
-                        Jorge Armando Mendez Perez 
-                    </p>
-                </div>
-                <div>
-                    <label>
-                        Ocupacion: 
-                    </label>
-                    <p>
-                        Contratista
-                    </p>
-                </div>
-                <div>
-                    <label>
-                        Direccion: 
-                    </label>
-                    <p>
-                        Carrera 21 cll 123 - 90 Sincelejo
-                    </p>
-                </div>
-                <div>
-                    <label>
-                        Telefono: 
-                    </label>
-                    <p>
-                        3023142109
-                    </p>
-                </div>
-            </section>
-        
-        </di>
-        
-        <div>
-            <a href="experiencia.html">Volver</a>
-            <a href="hojaVida.pdf">Descargar Hoja de vida</a>
-        </div>
+    <body onload="main()" class="tema1" id="tema1">
+        <header>
+            <h1><img src="./img/foto.jpeg">Hoja de Vida</h1>
+            <div>
+                <select id="slcTemas" >
+                    <option value="1">Tema 1</option>
+                    <option value="2">Tema 2</option>
+                    <option value="3">Tema 3</option>
+                    <option value="4">Tema 4</option>
+                </select>
+                <button id="btnCambiar" onclick="btnCambiar()">Cambiar tema</button>
+            </div>
+        </header>
+        <main>
+            <div>
+                <h2 class="subtitulo">
+                    <b>
+                        Referencias Personales
+                    </b>
+                </h2>
+            </div>
+            <di>
+                <section>
+                    <div>
+                        <a href="" id="visible" onclick="mostrarContenido()">REFERENCIA 1</a>
+                        <ul class="contenido" id="hidden"">
+                            <li>
+                                <label>
+                                    Nombre completo Referencia 1:
+                                </label>
+                                <p>
+                                    Maria Carolina Mendez Monzon
+                                </p>
+                            </li>
+                            <li>
+                                <label>
+                                    Ocupacion:
+                                </label>
+                                <p>
+                                    Ama de casa
+                                </p>
+                            </li>
+                            <li>
+                                <label>
+                                    Direccion:  
+                                </label>
+                                <p>
+                                    Carrera 3 call 2- 123 Chalan, Sucre
+                                </p>
+                            </li>
+                            <li>
+                                <label>
+                                    Telefono: 
+                                </label>
+                                <p>
+                                    322172712
+                                </p>
+                            </li>
+                        </ul> 
+                    </div>
+                </section>
+                 <section>
+                    <div>
+                        <a href="" id="visible" onclick="mostrarContenido()">REFERENCIA 2</a>
+                        <ul class="contenido" id="hidden" ">
+                            <li>
+                                <label>
+                                    Nombre completo Referencia 2:
+                                </label>
+                                <p>
+                                   lizeth Maria Rodriguez Puentes 
+                                </p>
+                            </li>
+                            <li>
+                                <label>
+                                    Ocupacion:
+                                </label>
+                                <p>
+                                    conatadora
+                                </p>
+                            </li>
+                            <li>
+                                <label>
+                                    Direccion:  
+                                </label>
+                                <p>
+                                    Calle 78 cra 123-23 Chalan, Sucre
+                                </p>
+                            </li>
+                            <li>
+                                <label>
+                                    Telefono: 
+                                </label>
+                                <p>
+                                    3178932140
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                 <section>
+                    <div>
+                        <a href="" id="visible" onclick="mostrarContenido()">REFERENCIA 3</a>
+                        <ul class="contenido" id="hidden"">
+                            <li>
+                                <label>
+                                    Nombre completo Referencia 3:
+                                </label>
+                                <p>
+                                   Jorge Armando Mendez Perez  
+                                </p>
+                            </li>
+                            <li>
+                                <label>
+                                    Ocupacion:
+                                </label>
+                                <p>
+                                    Contratista
+                                </p>
+                            </li>
+                            <li>
+                                <label>
+                                    Direccion:  
+                                </label>
+                                <p>
+                                    Carrera 21 cll 123 - 90 Sincelejo
+                                </p>
+                            </li>
+                            <li>
+                                <label>
+                                    Telefono: 
+                                </label>
+                                <p>
+                                    3023142109
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            
+            </di>
+            <div>
+                <a class="btn" href="experiencia.html">Volver</a>
+                <a class="btn" href="hojaVida.pdf">Descargar Hoja de vida</a>
+            </div>
+        </main>
     </body>
 </html>
